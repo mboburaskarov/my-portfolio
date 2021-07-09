@@ -1,0 +1,123 @@
+.topbar {
+  background-color: white;
+  color: #181824;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topbar .wrapper {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .wrapper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .wrapper .left .logo {
+  font-size: 37px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  margin: 17px;
+}
+
+@media (max-width: 768px) {
+  .topbar .wrapper .left .logo {
+    margin: 18px 2px;
+    font-size: 25px;
+  }
+}
+
+.topbar .wrapper .left .itemcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .topbar .wrapper .left .itemcontainer {
+    display: none;
+  }
+}
+
+.topbar .wrapper .left .itemcontainer .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.topbar .wrapper .left .itemcontainer span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topbar .wrapper .right .hamburger {
+  width: 32px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.topbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #181824;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topbar.active {
+  background-color: #181824;
+  color: white;
+}
+
+.topbar.active .hamburger span:first-child {
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar.active .hamburger span:last-child {
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=topbar.css.map */

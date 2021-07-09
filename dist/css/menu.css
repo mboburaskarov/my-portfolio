@@ -1,0 +1,77 @@
+.menu {
+  width: 350px;
+  height: 100vh;
+  z-index: 2;
+  background-color: #181824;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  color: white;
+  width: 60%;
+  list-style: none;
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.menu ul li {
+  margin-bottom: 27px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.menu ul li a:hover {
+  font-weight: 500;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu.active ul {
+  padding: 0;
+  margin: 0;
+  color: white;
+  width: 60%;
+  list-style: none;
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.menu.active ul li {
+  margin-bottom: 27px;
+}
+
+.menu.active ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.menu.active ul li a:hover {
+  font-weight: 500;
+}
+/*# sourceMappingURL=menu.css.map */

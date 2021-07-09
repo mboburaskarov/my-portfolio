@@ -1,0 +1,146 @@
+.contact {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.contact .left img {
+  height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.contact .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .right h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact .right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact .right form {
+  width: 70%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .right form input {
+  width: 400px;
+  height: 30px;
+  font-size: 18px;
+  padding: 5px 14px;
+  border: solid 2px #181824;
+  border-radius: 23px;
+}
+
+.contact .right form input:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .contact .right form input {
+    width: 200px;
+    height: 20px;
+  }
+}
+
+.contact .right form textarea {
+  width: 400px;
+  height: 300px;
+  font-size: 18px;
+  padding: 8px 14px;
+  border: solid 2px #181824;
+  border-radius: 23px;
+}
+
+.contact .right form textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .contact .right form textarea {
+    width: 200px;
+    height: 100px;
+    margin: 5px 0;
+  }
+}
+
+.contact .right form button {
+  width: 170px;
+  height: 50px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contact .right form button {
+    font-size: 12px;
+    width: 80px;
+    height: 25px;
+  }
+}
+
+.contact .right form button:focus {
+  outline: none;
+}
+
+.contact .right form span {
+  color: green;
+}
+/*# sourceMappingURL=contact.css.map */

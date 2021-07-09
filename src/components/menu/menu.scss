@@ -1,0 +1,68 @@
+@import "../../global.scss";
+
+.menu {
+  width: 350px;
+  height: 100vh;
+  z-index: 2;
+  background-color: $mainColor;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 60%;
+    list-style: none;
+    font-size: 33px;
+    font-weight: 300;
+
+    li {
+      margin-bottom: 27px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: inherit;
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      color: white;
+      width: 60%;
+      list-style: none;
+      font-size: 33px;
+      font-weight: 300;
+
+      li {
+        margin-bottom: 27px;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: inherit;
+
+          &:hover {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
